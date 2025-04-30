@@ -12,11 +12,11 @@ Customer churn is one of the most costly challenges in retail banking. Using his
 
 ## 📊 Features & Highlights
 
-- ✅ **EDA**: Outlier detection, class imbalance handling, correlation mapping
-- ✅ **Data Preprocessing**: Label encoding, feature selection, train-test splitting
-- ✅ **Modeling**: Trained with Random Forest, XGBoost, and Logistic Regression
-- ✅ **Metrics**: Precision, Recall, F1-Score, Confusion Matrix, ROC-AUC
-- ✅ **Interpretability**: SHAP-based feature importance visualizations
+- ✅ **EDA**: Outlier detection, class imbalance handling, correlation mapping  
+- ✅ **Data Preprocessing**: Label encoding, feature selection, train-test splitting  
+- ✅ **Modeling**: Trained with Random Forest, XGBoost, and Logistic Regression  
+- ✅ **Metrics**: Precision, Recall, F1-Score, Confusion Matrix, ROC-AUC  
+- ✅ **Interpretability**: SHAP-based feature importance visualizations  
 
 ---
 
@@ -52,10 +52,10 @@ Customer churn is one of the most costly challenges in retail banking. Using his
 
 This project includes a **CI/CD pipeline** that:
 
-- ✅ Validates model training code on push
-- ✅ Automatically runs inference tests
-- ✅ Deploys the Streamlit app
-- ✅ Runs in headless mode for testing
+- ✅ Validates model training code on push  
+- ✅ Automatically runs inference tests  
+- ✅ Deploys the Streamlit app  
+- ✅ Runs in headless mode for testing  
 - ✅ Blocks secrets using `.env` and `.gitignore`
 
 ```yaml
@@ -73,9 +73,9 @@ This project includes a **CI/CD pipeline** that:
 
 Once deployed, the app:
 
-- Accepts user-input customer data
-- Outputs prediction (Churn / Not Churn)
-- Displays SHAP-based explainability
+- Accepts user-input customer data  
+- Outputs prediction (Churn / Not Churn)  
+- Displays SHAP-based explainability  
 
 **Launch locally:**
 
@@ -97,13 +97,31 @@ docker run -p 8501:8501 churn-app
 
 ---
 
+## 💡 Cloud Launch Links
+
+| Platform | Link |
+|---------|------|
+| ▶️ Colab | [Run in Colab](https://colab.research.google.com/github/sdballpark/bank-churn-prediction/blob/master/notebooks/2_Modeling.ipynb) |
+| 🧠 Kaggle | [Open in Kaggle](https://www.kaggle.com/code/new) *(upload project files manually or from GitHub)* |
+
+---
+
+## 🔐 Token & Secret Management
+
+Sensitive API tokens (e.g., for Hugging Face or GitHub) were previously stored in `.env`, but this file has been removed from version control and listed in `.gitignore`. You must:
+
+- ✅ Manually recreate your `.env` file locally to run features needing auth  
+- ✅ Never push `.env` to GitHub — it’s now protected by GitHub Push Protection  
+
+---
+
 ## 🧪 Future Enhancements
 
-- ✅ Cross-validation + Hyperparameter tuning
-- ✅ Streamlit Cloud deployment via GitHub hooks
-- ✅ Unit tests on inference engine
-- ✅ MLflow or DVC versioning
-- ✅ Expand SHAP interpretability
+- ✅ Cross-validation + Hyperparameter tuning  
+- ✅ Streamlit Cloud deployment via GitHub hooks  
+- ✅ Unit tests on inference engine  
+- ✅ MLflow or DVC versioning  
+- ✅ Expand SHAP interpretability  
 
 ---
 
@@ -114,7 +132,7 @@ docker run -p 8501:8501 churn-app
 | ML & Modeling     | Scikit-learn, XGBoost, SHAP, Pandas, NumPy             |
 | Visualization     | Seaborn, Matplotlib, Streamlit                        |
 | Deployment        | Docker, GitHub Actions CI/CD, `.env` security         |
-| DevOps & IaC      | Git, GitHub Workflows, Terraform (optional)          |
+| DevOps & IaC      | Git, GitHub Workflows, Terraform (optional)           |
 | Collaboration     | Modular codebase, clean documentation                 |
 
 ---
@@ -132,4 +150,3 @@ Cybersecurity Architect & Machine Learning Engineer
 
 This project is intended as a **technical showcase** of real-world ML engineering skills:  
 CI/CD integration, modeling best practices, and secure deployment — ideal for **ML Ops**, **Data Scientist**, and **ML Engineer** roles.
-
